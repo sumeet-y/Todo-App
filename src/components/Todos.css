@@ -1,0 +1,17 @@
+.todo-list{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: small;
+    color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.delete-icon{
+    cursor: pointer;
+    color: rgb(241, 77, 77);
+}
