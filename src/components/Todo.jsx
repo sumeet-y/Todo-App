@@ -9,8 +9,12 @@ const Todo = () => {
   const inputRef = useRef(null);
 
   function createTodo() {
-    setTodo([...todo, { text: inputRef.current.value, no: Math.random() * 100}]);
-    inputRef.current.value = '';
+    if(inputRef.current.value == ''){
+      alert("Please Add Some Todo");
+    }else{
+      setTodo([...todo, { text: inputRef.current.value, no: Math.random() * 100}]);
+      inputRef.current.value = '';
+    }
   }
 
   // useEffect(() => {
